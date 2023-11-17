@@ -1,0 +1,11 @@
+apiVersion: builtin
+kind: ChartInflator
+metadata:
+  name: chartInflator
+
+chartName: helm-kustomize
+releaseName: template
+releaseNamespace: template
+chartRepoUrl: https://github.com/vagnerfls/helm-kustomize.git
+values: 
+  - values.yaml
