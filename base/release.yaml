@@ -1,0 +1,17 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: template
+  namespace: template
+spec:
+  releaseName: template
+  chart:
+    spec:
+      chart: helm-kustomize
+      sourceRef:
+        kind: HelmRepository
+        name: template
+  interval: 50m
+  install:
+    remediation:
+      retries: 3
