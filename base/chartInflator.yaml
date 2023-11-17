@@ -5,6 +5,7 @@ metadata:
 
 chartName: helm-kustomize
 releaseName: template
+chartHome: helm
 releaseNamespace: template
 chartRepoUrl: https://github.com/vagnerfls/helm-kustomize.git
 values: 
